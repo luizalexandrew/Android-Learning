@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.brain.crudlite.Cadastro">
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:id="@+id/campoNome"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/nomecad"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:ems="10"
+        android:id="@+id/campoSenha"
+        android:layout_below="@+id/campoNome"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/senha"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:id="@+id/campoTelefone"
+        android:layout_below="@+id/campoSenha"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/telefone"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="date"
+        android:ems="10"
+        android:id="@+id/campoData"
+        android:layout_below="@+id/campoTelefone"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/data_de_nascimento"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="numberSigned"
+        android:ems="10"
+        android:id="@+id/campoCPF"
+        android:layout_below="@+id/campoData"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:hint="@string/cpf"
+        />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastrar"
+        android:id="@+id/button3"
+        android:layout_below="@+id/campoCPF"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="51dp"
+        android:layout_alignParentEnd="true"
+        android:onClick="cadastrar" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancelar"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:onClick="voltarLogin" />
+
+</RelativeLayout>

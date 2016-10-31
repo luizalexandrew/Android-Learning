@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">CRUDLite</string>
+    <string name="usu_rio">Usuário</string>
+    <string name="senha_pass">Senha</string>
+    <string name="nomecad">Nome</string>
+    <string name="senha">Senha</string>
+    <string name="telefone">Telefone</string>
+    <string name="data_de_nascimento">Data de Nascimento</string>
+    <string name="cpf">CPF</string>
+</resources>
