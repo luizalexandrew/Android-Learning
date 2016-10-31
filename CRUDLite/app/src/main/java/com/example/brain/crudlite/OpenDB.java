@@ -7,7 +7,7 @@ import android.database.sqlite.SQLiteOpenHelper;
 public class OpenDB extends SQLiteOpenHelper {
 
     private final String databaseName = "dbUser";
-    private final int databaseVersion = 1;
+    private final int databaseVersion = 2;
 
     private final String sqlCreate = "CREATE TABLE users "+
             "(id integer primary key autoincrement, " +
@@ -16,7 +16,7 @@ public class OpenDB extends SQLiteOpenHelper {
     private final String sqlUpgrade = "DROP TABLE IF EXISTS users";
 
     public OpenDB(Context ctx){
-        super(ctx,"dbUser",null, 1);
+        super(ctx,"dbUser",null, 2);
     }
 
     @Override

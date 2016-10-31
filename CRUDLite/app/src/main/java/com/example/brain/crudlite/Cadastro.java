@@ -1,10 +1,12 @@
 package com.example.brain.crudlite;
 
+import android.content.Context;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -41,7 +43,24 @@ public class Cadastro extends AppCompatActivity {
 
         UsuarioDAO daoUsuario = new UsuarioDAO(Cadastro.this);
 
-        daoUsuario.inserirUser(usuario);
-        
+        int cadastro = daoUsuario.inserirUser(usuario);
+
+        Context contexto = getApplicationContext();
+        int duracao = Toast.LENGTH_SHORT;
+
+        if(cadastro == 1){
+            String texto = "Sucesso ao cadastrar";
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
+            finish();
+        }else{
+            String texto = "Falha no cadastro";
+            Toast toast = Toast.makeText(contexto, texto,duracao);
+            toast.show();
+        }
+
     }
+
+
+
 }
