@@ -17,7 +17,8 @@
         </activity>
         <activity android:name=".Cadastro" />
         <activity android:name=".Logado" />
-        <activity android:name=".BuscaUsuario"></activity>
+        <activity android:name=".BuscaUsuario" />
+        <activity android:name=".BuscaTodosUsuarios"></activity>
     </application>
 
 </manifest>

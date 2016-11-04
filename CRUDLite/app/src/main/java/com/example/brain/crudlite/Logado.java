@@ -97,4 +97,11 @@ public class Logado extends AppCompatActivity {
 
     }
 
+    public void buscarTodosUsuarios(View v){
+
+        Intent it = new Intent(Logado.this, BuscaTodosUsuarios.class);
+        startActivity(it);
+
+    }
+
 }
